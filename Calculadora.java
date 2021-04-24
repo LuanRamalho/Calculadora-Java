@@ -6,7 +6,7 @@ public class Calculadora
     
     void Adição()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -26,11 +26,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println("");    
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Subtração()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -50,11 +52,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println("");    
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Multiplicação()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -74,11 +78,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println("");     
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Divisão()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -98,11 +104,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println("");      
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Exponenciação()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -122,6 +130,8 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println(""); 
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Fatorial()
@@ -140,7 +150,7 @@ public class Calculadora
     
     void Raíz_Quadrada()
     {
-        double num, R;
+        double num, R = 0;
         int i;
         
         i = 1;
@@ -158,11 +168,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println(""); 
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Raíz_Cúbica()
     {
-        double num, R;
+        double num, R = 0;
         int i;
         
         i = 1;
@@ -180,11 +192,13 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println(""); 
         }
+        
+        System.out.println("Resultado: "+R);
     }
     
     void Porcentagem_1()
     {
-        double num1, num2, R;
+        double num1, num2, R = 0;
         int i;
         
         i = 1;
@@ -205,12 +219,15 @@ public class Calculadora
             i = ler.nextInt();
             System.out.println("");      
         }
+        
+        System.out.printf("Resultado: %.2f%%" , R);
+        System.out.println("");
     }
     
     void Porcentagem_2()
     {
         int i = 1;
-        double num, P, R;
+        double num, P, R = 0;
         while(i>0)
         {
             System.out.println("Digite um número qualquer: ");
@@ -227,12 +244,15 @@ public class Calculadora
             System.out.println("Digite 1 para continuar ou 0 para sair: ");
             i = ler.nextInt();
         }
+        
+        System.out.printf("Resultado: %.0f", R);
+        System.out.println("");
     }
     
     void Porcentagem_3()
     {
         int i = 1;
-        double num, P, R;
+        double num, P, R = 0;
         while(i>0)
         {
             System.out.println("Digite um número qualquer: ");
@@ -249,6 +269,9 @@ public class Calculadora
             System.out.println("Digite 1 para continuar ou 0 para sair: ");
             i = ler.nextInt();
         }
+        
+        System.out.printf("Resultado: %.0f" , R);
+        System.out.println("");
     }
     
 
@@ -325,7 +348,5 @@ public class Calculadora
         {
             c.Porcentagem_3();
         }
-
     }
-    
 }
